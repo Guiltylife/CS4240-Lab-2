@@ -36,25 +36,13 @@ public class CustomGrab : MonoBehaviour
 
     void GrabObject()
     {
-        RaycastHit[] hits;
+        RaycastHit hit;
 
-        hits = Physics.SphereCastAll(transform.position, grabRadius, transform.forward, 100.0f, grabMask);
-
-        if (hits.Length > 0)
+        if (Physics.SphereCast(transform.position, grabRadius, transform.forward, out hit, 100.0f, grabMask))
         {
             isGrabbing = true;
 
-            int closestHit = 0;
-
-            for (int i = 0; i < hits.Length; i++)
-            {
-                if ((hits[i]).distance < hits[closestHit].distance)
-                {
-                    closestHit = i;
-                }
-            }
-
-            currGrabbedObject = hits[closestHit].transform.gameObject; // grab the closest object
+            currGrabbedObject = hit.transform.gameObject; // grab the closest object
             currGrabbedObject.GetComponent<Rigidbody>().isKinematic = true; // the grabbed object should not have gravity
 
             // grab object will follow our hands
