@@ -19,8 +19,9 @@ public class FlowerPot : MonoBehaviour
         if (other.gameObject.tag == "Projectile")
         {
             animator.SetTrigger("ProjectileHit");
+
+            Destroy(other.gameObject);
             Destroy(gameObject, 2.0f);
-            Destroy(other.gameObject, 2.0f);
         }
     }
     

@@ -7,6 +7,7 @@ public class CustomGrab : MonoBehaviour
     public string grabButtonName;
     public float grabRadius;
     public LayerMask grabMask;
+    public SkinnedMeshRenderer hand;
 
     private GameObject currGrabbedObject;
     private bool isGrabbing;
@@ -42,6 +43,8 @@ public class CustomGrab : MonoBehaviour
         {
             isGrabbing = true;
 
+            hand.enabled = false;
+
             currGrabbedObject = hit.transform.gameObject; // grab the closest object
             currGrabbedObject.GetComponent<Rigidbody>().isKinematic = true; // the grabbed object should not have gravity
 
@@ -58,6 +61,8 @@ public class CustomGrab : MonoBehaviour
         // we are currently grabbing something, let it go
         if (currGrabbedObject != null)
         {
+            hand.enabled = true;
+
             currGrabbedObject.transform.parent = null;
             currGrabbedObject.GetComponent<Rigidbody>().isKinematic = false; // enable gravity again for the object
 

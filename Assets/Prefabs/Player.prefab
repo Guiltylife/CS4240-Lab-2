@@ -461,19 +461,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100054, guid: d0c255d07fd68f14b94e55d388e7e6bb, type: 3}
   m_PrefabInstance: {fileID: 2074581191163906477}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2074581191470944174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074581191164006267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6e1d58a15a1fc45bf95dc30ce9e6ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Controller: 2
 --- !u!114 &2074581191470944161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,9 +479,28 @@ MonoBehaviour:
   grabMask:
     serializedVersion: 2
     m_Bits: 64
+  hand: {fileID: 2074581191177601549}
+--- !u!114 &2074581191470944174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074581191164006267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6e1d58a15a1fc45bf95dc30ce9e6ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Controller: 2
 --- !u!4 &2074581191164302107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400054, guid: d0c255d07fd68f14b94e55d388e7e6bb, type: 3}
+  m_PrefabInstance: {fileID: 2074581191163906477}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &2074581191177601549 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 13700000, guid: d0c255d07fd68f14b94e55d388e7e6bb, type: 3}
   m_PrefabInstance: {fileID: 2074581191163906477}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2074581192473597920
@@ -559,19 +565,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100054, guid: ca20b3907ff1c794cb89c1ad2cce8282, type: 3}
   m_PrefabInstance: {fileID: 2074581192473597920}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2074581192423066871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074581192473694518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6e1d58a15a1fc45bf95dc30ce9e6ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Controller: 1
 --- !u!114 &2074581192423066858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,6 +579,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2074581192595791562}
   teleportButtonName: LHandTrigger
+--- !u!114 &2074581192423066871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074581192473694518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6e1d58a15a1fc45bf95dc30ce9e6ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Controller: 1
 --- !u!4 &2074581192473988438 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400054, guid: ca20b3907ff1c794cb89c1ad2cce8282, type: 3}
