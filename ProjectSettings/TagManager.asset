@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Projectile
-  - floor
+  - Bullet
+  - Flowerpot
+  - Floor
   layers:
   - Default
   - TransparentFX

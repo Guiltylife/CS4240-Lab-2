@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 5366847822296324911}
   - component: {fileID: 5366847822296324904}
   - component: {fileID: 5366847822296325075}
-  - component: {fileID: 5366847822296324908}
   m_Layer: 0
   m_Name: Flowerpot
-  m_TagString: Untagged
+  m_TagString: Flowerpot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +111,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3478977006113397409}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.46, z: 0.4}
@@ -137,19 +136,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &5366847822296324908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3478977006113397409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbea6e0ab52b14911b5747aaa8831978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5366847822296325075}
 --- !u!1 &5366847821614559313
 GameObject:
   m_ObjectHideFlags: 0

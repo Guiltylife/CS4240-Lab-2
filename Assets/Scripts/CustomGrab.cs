@@ -49,8 +49,11 @@ public class CustomGrab : MonoBehaviour
             currGrabbedObject.GetComponent<Rigidbody>().isKinematic = true; // the grabbed object should not have gravity
 
             // grab object will follow our hands
-            currGrabbedObject.transform.position = transform.position; 
+            currGrabbedObject.transform.position = transform.position;
+            currGrabbedObject.transform.rotation = transform.rotation;
             currGrabbedObject.transform.parent = transform;
+
+            currGrabbedObject.GetComponent<Shoot>().isHold = true;
         }
     }
 
@@ -75,6 +78,8 @@ public class CustomGrab : MonoBehaviour
              */
             currGrabbedObject.GetComponent<Rigidbody>().velocity = OVRInput.GetLocalControllerVelocity(Controller);
             currGrabbedObject.GetComponent<Rigidbody>().angularVelocity = OVRInput.GetLocalControllerAngularVelocity(Controller);
+
+            currGrabbedObject.GetComponent<Shoot>().isHold = false;
 
             currGrabbedObject = null;
         }

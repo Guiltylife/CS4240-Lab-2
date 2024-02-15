@@ -38,7 +38,7 @@ public class Teleportation : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out hit, 100.0f))
         {
             GameObject gameObject = hit.collider.gameObject;
-            if (gameObject.CompareTag("floor"))
+            if (gameObject.CompareTag("Floor"))
             {
                 Vector3 targetPosition = hit.point;
                 targetPosition.y = 0;
