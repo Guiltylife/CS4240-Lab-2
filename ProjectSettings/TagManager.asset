@@ -7,6 +7,9 @@ TagManager:
   - Bullet
   - Flowerpot
   - Floor
+  - Level1
+  - Level2
+  - Level3
   layers:
   - Default
   - TransparentFX

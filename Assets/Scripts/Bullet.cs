@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public LevelController levelController;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,18 @@ public class Bullet : MonoBehaviour
 
             Destroy(gameObject);
             Destroy(other.gameObject, 2.0f);
+        } else if (other.gameObject.tag == "Level1")
+        {
+            levelController.Level1();
+            Destroy(gameObject);
+        } else if (other.gameObject.tag == "Level2")
+        {
+            levelController.Level2();
+            Destroy(gameObject);
+        } else if (other.gameObject.tag == "Level3")
+        {
+            levelController.Level3();
+            Destroy(gameObject);
         }
     }
 }
