@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.tag == "Flowerpot")
         {
+            other.GetComponent<Animator>().enabled = false;
             other.transform.Find("Flower").GetComponent<Animator>().SetTrigger("Bloom");
 
             Destroy(gameObject);
