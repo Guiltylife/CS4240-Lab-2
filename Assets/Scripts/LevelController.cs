@@ -42,8 +42,9 @@ public class LevelController : MonoBehaviour
         bool mirror = false;
         foreach (GameObject flowerpot in flowerpots)
         {
-            flowerpot.GetComponent<Animator>().SetTrigger("Movable");
-            flowerpot.GetComponent<Animator>().SetBool("Mirrot", mirror);
+            Animator flowerpotAnimator = flowerpot.transform.Find("Flowerpot").GetComponent<Animator>();
+            flowerpotAnimator.SetTrigger("Movable");
+            flowerpotAnimator.SetBool("Mirror", mirror);
             mirror = !mirror;
         }
     }

@@ -16,10 +16,10 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.tag == "Flowerpot")
         {
-            other.gameObject.GetComponent<Animator>().SetTrigger("ProjectileHit");
+            other.transform.Find("Flower").GetComponent<Animator>().SetTrigger("Bloom");
 
             Destroy(gameObject);
-            Destroy(other.gameObject, 2.0f);
+            Destroy(other.transform.parent.gameObject, 2.0f);
         } else if (other.gameObject.tag == "Level1")
         {
             levelController.Level1();
