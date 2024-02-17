@@ -12,10 +12,10 @@
 
 You can download the **Github Desktop** to pull or push this repository.
 
-## Setup Step
+## Setup
 
 1. Install XR Plug-in Management in project setting and turn on the oculus button. (You can check more detail in Lab 3 video)
-2. Install Oculus Intergration (Deprecated) from unity assets store.
+2. (Maybe no need) Install Oculus Intergration (Deprecated) from unity assets store.
 
 ## Packages Imported
 
@@ -36,5 +36,7 @@ Oculus Integration (Deprecated)
 **Flowerpot interaction:**
 
 Lowpoly Flowers
+
 PBR_Floweringpot
 
+Gun models from Taobao.com
