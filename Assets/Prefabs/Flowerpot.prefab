@@ -291,6 +291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5366847821614787703}
   - component: {fileID: 2676163397791182643}
+  - component: {fileID: 6304125274704143039}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -340,6 +341,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &6304125274704143039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366847821614559319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb3f20a80643bb45a06c75518c6962d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2676163397791182643}
 --- !u!1 &5366847821614559321
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +700,7 @@ GameObject:
   - component: {fileID: 6912088360623865177}
   - component: {fileID: 5907434161014346096}
   - component: {fileID: 6052249395100608807}
+  - component: {fileID: 4976719598586147531}
   m_Layer: 0
   m_Name: Flowerpot
   m_TagString: Flowerpot
@@ -808,3 +823,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &4976719598586147531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8026759195103049085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf92981234b10847aab3caeb448dfd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6052249395100608807}
+  levelController: {fileID: 0}

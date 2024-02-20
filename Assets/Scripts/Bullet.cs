@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public LevelController levelController;
     
     // Start is called before the first frame update
     void Start()
@@ -16,22 +15,15 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.tag == "Flowerpot")
         {
-            other.GetComponent<Animator>().enabled = false;
-            other.transform.Find("Flower").GetComponent<Animator>().SetTrigger("Bloom");
+            other.GetComponent<FlowerPot>().ShootPot();
+            other.transform.Find("Flower").GetComponent<Flower>().Bloom();
 
             Destroy(gameObject);
             Destroy(other.transform.parent.gameObject, 2.0f);
-        } else if (other.gameObject.tag == "Level1")
+        } else if (other.gameObject.tag == "LevelSelector")
         {
-            levelController.Level1();
-            Destroy(gameObject);
-        } else if (other.gameObject.tag == "Level2")
-        {
-            levelController.Level2();
-            Destroy(gameObject);
-        } else if (other.gameObject.tag == "Level3")
-        {
-            levelController.Level3();
+            other.GetComponent<LevelSelector>().LoadLevel();
+
             Destroy(gameObject);
         }
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoot : MonoBehaviour
+public class Gun : MonoBehaviour
 {
     [SerializeField]
     string shootButtonName;
@@ -12,8 +12,6 @@ public class Shoot : MonoBehaviour
     Transform gunHead;
     [SerializeField]
     float bulletForce;
-    [SerializeField]
-    LevelController levelController;
 
     public bool isHold = false;
     
@@ -33,7 +31,6 @@ public class Shoot : MonoBehaviour
             isDown = true;
             GameObject bullet = Instantiate(bulletPrefab, gunHead.position, gunHead.rotation);
             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletForce);
-            bullet.GetComponent<Bullet>().levelController = levelController;
         }
 
         if (Input.GetAxis(shootButtonName) < 0.1)

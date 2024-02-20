@@ -53,7 +53,7 @@ public class CustomGrab : MonoBehaviour
             currGrabbedObject.transform.rotation = transform.rotation;
             currGrabbedObject.transform.parent = transform;
 
-            currGrabbedObject.GetComponent<Shoot>().isHold = true;
+            currGrabbedObject.GetComponent<Gun>().isHold = true;
         }
     }
 
@@ -79,7 +79,7 @@ public class CustomGrab : MonoBehaviour
             currGrabbedObject.GetComponent<Rigidbody>().velocity = OVRInput.GetLocalControllerVelocity(Controller);
             currGrabbedObject.GetComponent<Rigidbody>().angularVelocity = OVRInput.GetLocalControllerAngularVelocity(Controller);
 
-            currGrabbedObject.GetComponent<Shoot>().isHold = false;
+            currGrabbedObject.GetComponent<Gun>().isHold = false;
 
             currGrabbedObject = null;
         }
