@@ -18,9 +18,11 @@ public class LevelController : MonoBehaviour
 
     private int level = 0;
     private int score = 0;
-    private int time = 0;
+    private float time = 0;
 
     private int potNum = 0;
+
+    private bool randomGenerate = false;
     
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,25 @@ public class LevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (randomGenerate)
+        {
+            if (potNum == 0)
+            {
+                int x = UnityEngine.Random.Range(-1, 2);
+                int z = UnityEngine.Random.Range(1, 4);
+
+                GeneratePot(new Vector3(x, 0, z), Quaternion.Euler(0, 0, 0), true);
+            }
+
+            time -= Time.deltaTime;
+            uiController.SetTimeBoard((int)Mathf.Ceil(time));
+            if (time <= 0)
+            {
+                randomGenerate = false;
+                ClearAllPots();
+            }
+        }
+
     }
 
     public void Level0()
@@ -96,7 +116,9 @@ public class LevelController : MonoBehaviour
         time = 60;
         uiController.SetLevelBoard(level);
         uiController.SetScoreBoard(score);
-        uiController.SetTimeBoard(time);
+        uiController.SetTimeBoard((int)Mathf.Ceil(time));
+
+        randomGenerate = true;
     }
 
     private void ClearAllPots()
@@ -121,6 +143,7 @@ public class LevelController : MonoBehaviour
         score = 0;
         time = 0;
         potNum = 0;
+        randomGenerate = false;
     }
 
     public void ShootPot()

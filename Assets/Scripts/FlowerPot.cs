@@ -22,6 +22,12 @@ public class FlowerPot : MonoBehaviour
     public void ShootPot()
     {
         animator.enabled = false;
+        Invoke("DelayShootPot", 1.0f);
+        Destroy(transform.parent.gameObject, 1.0f);
+    }
+
+    private void DelayShootPot()
+    {
         levelController.ShootPot();
     }
 }
