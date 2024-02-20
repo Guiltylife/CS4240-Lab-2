@@ -12,6 +12,8 @@ public class Gun : MonoBehaviour
     Transform gunHead;
     [SerializeField]
     float bulletForce;
+    [SerializeField]
+    AudioSource shootSound;
 
     public bool isHold = false;
     
@@ -31,6 +33,8 @@ public class Gun : MonoBehaviour
             isDown = true;
             GameObject bullet = Instantiate(bulletPrefab, gunHead.position, gunHead.rotation);
             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletForce);
+
+            shootSound.Play();
         }
 
         if (Input.GetAxis(shootButtonName) < 0.1)

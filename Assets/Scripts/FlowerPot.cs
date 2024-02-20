@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class FlowerPot : MonoBehaviour
 {
-    [SerializeField] Animator animator;
+    [SerializeField]
+    Animator animator;
+    [SerializeField]
+    AudioSource hitSound;
+
     public LevelController levelController;
     
     // Start is called before the first frame update
@@ -22,6 +26,7 @@ public class FlowerPot : MonoBehaviour
     public void ShootPot()
     {
         animator.enabled = false;
+        hitSound.Play();
         Invoke("DelayShootPot", 1.0f);
         Destroy(transform.parent.gameObject, 1.0f);
     }

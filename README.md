@@ -21,7 +21,7 @@ You can download the **Github Desktop** to pull or push this repository.
 
 **VR Basic package:**
 
-Oculus Integration (Deprecated)
+Oculus Integration (Deprecated): From asset store
 
 
 
@@ -35,8 +35,15 @@ Oculus Integration (Deprecated)
 
 **Flowerpot interaction:**
 
-Lowpoly Flowers
+Lowpoly Flowers: From asset store
 
-PBR_Floweringpot
+PBR_Floweringpot: From asset store
 
-Gun models from Taobao.com
+Gun models: From Taobao.com
+
+**Scene:**
+Menu Chalk Board: From asset store
+
+Shooting Sound: From asset store
+
+Free Casual Music Pack: From asset store

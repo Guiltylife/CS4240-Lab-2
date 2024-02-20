@@ -8,6 +8,8 @@ public class Teleportation : MonoBehaviour
     Transform player;
     [SerializeField]
     string teleportButtonName;
+    [SerializeField]
+    AudioSource teleportSound;
 
     bool isHold = false;
     
@@ -43,6 +45,8 @@ public class Teleportation : MonoBehaviour
                 Vector3 targetPosition = hit.point;
                 targetPosition.y = 0;
                 player.position = targetPosition;
+
+                teleportSound.Play();
             }
         }
     }
