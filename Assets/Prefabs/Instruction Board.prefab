@@ -25,11 +25,12 @@ Transform:
   m_GameObject: {fileID: 1849359320759475484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6949766493989374287}
   - {fileID: 1510036865518575133}
+  - {fileID: 4382813599594889752}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -62,7 +63,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -94,9 +95,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_Text
-      value: "Shoot seeds into the pots by pressing ___ to grow plants for your garden.\r\n\r\nGood
-        luck gardener! Refer to the blackboard on your right for a reminder of the
-        rules.\r\n\r\n(add some information about levels?)\r\n\r"
+      value: 'There''s a gun on your left.
+
+        Pick it up by holding the right
+        side trigger.
+
+        Press the front trigger to shoot.'
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_FontData.m_Font
@@ -108,7 +112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 11
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_FontData.m_FontStyle
@@ -146,6 +150,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11450934, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 22348872, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_Camera
       value: 
@@ -155,8 +163,12 @@ PrefabInstance:
       value: -5.7
       objectReference: {fileID: 0}
     - target: {fileID: 22489102, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 22489102, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: -40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
@@ -164,6 +176,147 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
   m_PrefabInstance: {fileID: 1510036865518684321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4382813599594976420
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5691600932265083098}
+    m_Modifications:
+    - target: {fileID: 108466, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_Name
+      value: menuboard_simple (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_Text
+      value: 'Shoot a box behind you to select a level.
+
+        Shoot flower pots
+        to plant cacti and gain points.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 076f2bc73df65f143a61db06e28831f9, type: 3}
+    - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428742, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_Text
+      value: 'Flower
+
+        Shooter
+
+        ---------'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428742, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.10844511
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428742, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7520215
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428742, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.33077282
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428742, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 385d9f8df642d0648823c8d8f2a39cb7, type: 3}
+    - target: {fileID: 11428742, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428742, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 11450934, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22348872, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465022, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22489102, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 22489102, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -40
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+--- !u!4 &4382813599594889752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+  m_PrefabInstance: {fileID: 4382813599594976420}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6949766493989036019
 PrefabInstance:
@@ -194,7 +347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 448188, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -226,10 +379,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_Text
-      value: "Welcome to Flower Planter! After this tutorial, you\u2019ll be ready
-        to play the game.\r\n\r\nLook around you. The path marks the boundaries of
-        your play area. You cannot move or teleport beyond it.\r\n\r\nUse your right
-        hand to pick up the gun to your (left/right). \r\n\r\n\n"
+      value: 'Look around.
+
+        You can move on the grass in the fence.
+
+        Use
+        your left side trigger to teleport.'
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_FontData.m_Font
@@ -241,7 +396,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 11
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11416696, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_FontData.m_FontStyle
@@ -279,6 +438,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11450934, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 22348872, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_Camera
       value: 
@@ -288,8 +451,12 @@ PrefabInstance:
       value: -5.7
       objectReference: {fileID: 0}
     - target: {fileID: 22489102, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 22489102, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -84.5
+      value: -40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c9f0c23c52027445b918539b1026af4, type: 3}
