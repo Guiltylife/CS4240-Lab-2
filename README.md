@@ -12,26 +12,19 @@
 
 You can download the **Github Desktop** to pull or push this repository.
 
-## Setup
+## How to play
 
-1. Install XR Plug-in Management in project setting and turn on the oculus button. (You can check more detail in Lab 3 video)
-2. (Maybe no need) Install Oculus Intergration (Deprecated) from unity assets store.
+1. Teleporation: Point at the position where you want to teleport to. Press the left side trigger to teleport. You can only teleport on grass in the fences.
+1. Grasping: Point at the object you want to grasp. Press and hold the right side trigger to grasp. You can only grasp the gun on the table.
+1. Shooting: Press the right front trigger to shoot.
+1. Level Selecting: Shoot the box behind you to select level.
+1. Game Logic: Shoot the flower pots in the level and get points. In level 1 and 2, you need to shoot all flower pots. In level 3, shoot flower pots as much as possible in 1 minutes.
 
 ## Packages Imported
 
 **VR Basic package:**
 
 Oculus Integration (Deprecated): From asset store
-
-
-
-**Teleportation:**
-
-
-
-**Grabbing:**
-
-
 
 **Flowerpot interaction:**
 
