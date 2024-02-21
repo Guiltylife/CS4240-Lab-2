@@ -47,3 +47,7 @@ Menu Chalk Board: From asset store
 Shooting Sound: From asset store
 
 Free Casual Music Pack: From asset store
+
+Low Poly Farm Pack Lite: From asset store
+
+Raw Wooden Furniture Free: From asset store
