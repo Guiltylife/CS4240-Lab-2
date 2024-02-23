@@ -47,11 +47,11 @@ Raw Wooden Furniture Free: From asset store
 
 ## Screen Shots
 
-![ScreenShot1](images//ScreenShot 1.png)
+![ScreenShot1](images/ScreenShot1.png)
 
-![Screen Shot 2](images/ScreenShot 2.png)
+![Screen Shot 2](images/ScreenShot2.png)
 
-![Screen Shot 3](images/ScreenShot 3.png)
+![Screen Shot 3](images/ScreenShot3.png)
 
 You can also find a demo video in Videos folder.
 
