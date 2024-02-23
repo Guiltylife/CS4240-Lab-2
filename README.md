@@ -47,7 +47,7 @@ Raw Wooden Furniture Free: From asset store
 
 ## Screen Shots
 
-![ScreenShot1](images/ScreenShot 1.png)
+![ScreenShot1](images//ScreenShot 1.png)
 
 ![Screen Shot 2](images/ScreenShot 2.png)
 
