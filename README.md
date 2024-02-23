@@ -44,3 +44,13 @@ Free Casual Music Pack: From asset store
 Low Poly Farm Pack Lite: From asset store
 
 Raw Wooden Furniture Free: From asset store
+
+## Screen Shots
+
+![Screen Shot 1](Images/ScreenShot 1.png)
+
+![Screen Shot 2](Images/ScreenShot 2.png)
+
+![Screen Shot 3](Images/ScreenShot 3.png)
+
+You can also find a demo video in Videos folder.
