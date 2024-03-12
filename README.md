@@ -1,4 +1,4 @@
-# CS4240-Lab-2
+# Flower Shooter
 
 **Please create your own scene to implement your function.**
 
